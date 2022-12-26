@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(64, 145, 147);
+        background-color: rgb(219, 208, 193);
+
+    }
+
+    .classes {
+        text-align: initial;
+        color: black;
+    }
+</style>
+<script>
+    function checkForm() {
+        let f = document.searchForm
+        // if (f.firstname.value == "") {
+        //     alert('이름을 입력하세요')
+        //     return false
+        // }
+        // if (f.lastname.value == "") {
+        //     alert('성을 입력하세요')
+        //     return false
+        // }
+        // if (f.email.value == "") {
+        //     alert('이메일을 입력하세요')
+        //     return false
+        // }
+        alert('작성완료')
+        return true
+    }
+</script>
+
+<body>
+    <h1> 과제입니다!!! </h1>
+    <form name="searchForm" onsubmit="return checkForm()">
+        First name : <br>
+        <input name="firstname" type="text" required><br>
+        <!-- required 는 필수입력 창인걸 알수있다. -->
+        Last name : <br>
+        <input name="lastname" type="text" name="usr" required><br>
+        Email : <br>
+        <input name="email" type="text"><br>
+        Gender : <label><input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female</label> <br>
+        Favorite : <label><input type="checkbox">Html</label>
+        <label><input type="checkbox">Java</label>
+        <label><input type="checkbox">JavaScript</label> <br>
+        Browser : <select>
+            <option>크롬
+            <option>익스
+            <option>파폭
+        </select> <br>
+        Birthday : <input type="date" value="연도..월..일"> <br>
+        <!-- <input type="button" value="제출" onclick="alert('제출 완료!')"> -->
+        <input type="submit" value="제출">
+        <!-- 은 제출이라는 버튼이 형성이되며 정보창이 초기화된다. -->
+    </form>
+</body>
+
+</html>
+</body>
+
+</html>
